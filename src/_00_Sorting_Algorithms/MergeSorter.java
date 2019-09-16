@@ -63,7 +63,7 @@ public class MergeSorter extends Sorter {
 				}
 					k++;
 					//display.updateDisplay();
-
+			}
 				// 17. make a while loop that runs while i is less than or equal to middle
 				while (i <= middle) {
 					// 18. set array at k equal to temp array at i
@@ -72,7 +72,7 @@ public class MergeSorter extends Sorter {
 					k++;
 					i++;
 					//display.updateDisplay();
-				}
+				
 			}
 		}
 	display.updateDisplay();
