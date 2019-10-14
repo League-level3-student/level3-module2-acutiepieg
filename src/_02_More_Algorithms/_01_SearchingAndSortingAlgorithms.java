@@ -92,6 +92,7 @@ public class _01_SearchingAndSortingAlgorithms {
 		assertEquals("aby", Algorithms.sortWords(words).get(0));
 		assertEquals("bar", Algorithms.sortWords(words).get(10));
 		assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
+		
 	}
 
 }

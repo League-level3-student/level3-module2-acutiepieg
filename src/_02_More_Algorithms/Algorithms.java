@@ -102,16 +102,29 @@ public class Algorithms {
 		}
 		return sequences;
 	}
-	
+
 	public static List<String> sortWords(List<String> words) {
-//		boolean sorted = false;
-//		int counter = 0;
-//		while(sorted == false) {
-//			counter = 0;
-//		}
-		
-		System.out.println("A".compareTo("D"));
-		
+		boolean sorted = false;
+		int counter = 0;
+		while (sorted == false) {
+			counter = 0;
+			for (int i = 0; i < words.size(); i++) {
+				if (i != words.size() - 1) {
+					if (words.get(i).compareTo(words.get(i + 1)) > 0) {
+						String sequence1 = words.get(i);
+						String sequence2 = words.get(i + 1);
+						words.set(i, sequence2);
+						words.set(i + 1, sequence1);
+						counter++;
+					}
+				}
+			}
+			if (counter == 0) {
+				sorted = true;
+				break;
+			}
+		}
+
 		return words;
 	}
 
